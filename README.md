@@ -33,5 +33,5 @@ Mods can call any command either in the chat or by whispering Botskeee. It is re
 - `!limit`: See the current queue size limit (default 10).
 - `!setlimit <n>`: Set the queue size limit to `n`.
 - `!remind-interval <n?>`: Set number of minutes between reminders to `n`. Just prints the current interval if `n` isn't provided.
-- `!autolist-interval <n?>`: Set number of minutes between `!list` calls to `n`. Just prints the current interval is `n` isn't provided.
+- `!autolist-interval <n?>`: Set number of minutes between `!list` calls to `n`. Just prints the current interval if `n` isn't provided.
 
