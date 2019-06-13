@@ -27,7 +27,7 @@ Mods can call any command either in the chat or by whispering Botskeee. It is re
 ### - Queue Settings -
 - `!mode <mode>`: Set the current mode for queue.
   - `!mode public`: Anybody can join.
-  - `!mode follower`: Followers only can join.
+  - `!mode follower`: Followers only can join. (DEFAULT)
   - `!mode sub`: Subscribers only can join.
 - `!verbose`: Toggle whether the bot responds to everything or not
 - `!limit`: See the current queue size limit (default 10).
