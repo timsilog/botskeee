@@ -4,6 +4,7 @@
 - `!status`: Check if the queue is open.
 - `!join <username?>`: Join the queue. `username` is required for the first time, then no longer needed every time after. Calling `!join <username>` otherwise updates your Fortnite name in the database. `username` needs to be their Fortnite name, not their Epic Games name.
 - `!dropme`: Remove yourself from the list.
+- `!skipme`: Move yourself to the end of the line.
 - `!spot`: See where you are in line.
  
 ## --- MOD-ONLY COMMANDS ---
@@ -16,10 +17,12 @@ Mods can call any command either in the chat or by whispering Botskeee. It is re
 - `!list`: See the current queue.
 - `!current`: Tell the chat who's next in line.
 - `!next`: Remove the person in the front of the line.
-- `!skip`: Move the front of the line to the back.
+- `!skip <twitchname?>...`: Move the front of the line to the back. If any number of twitch names are provided, they are moved to the back of the line in the given order instead.
 - `!add <twitchname> <n?>`: Adds a twitch user to position `n` in line. If a number isn't provided then the user is added to the back of the line. User must already exist in the database, otherwise use `!store`.
 - `!store <twitchname> <ign>`: Adds/edits a twitch user with the specified in-game name to the database (but not the queue, use `!add`).
-- `!drop <twitchname?>`: Removes the specified user from the list or the front of the list if not provided.
+- `!drop <twitchname?>...`: Removes all specified users from the list or the front of the list if none provided.
+- `!listmode <public?|mod?>`: Displays the current list mode. Sets the list to be public or mod-only if provided. 
+- `!listcooldown <n?>`: Displays the current list cooldown for public mode (default 20 seconds). If `n` is provided, sets the cooldown to `n` seconds.
 - `!remind`: Enable bot to remind the chat to follow (default every 20 mins). Call again to disable. Call `!remind restart` to restart it.
 - `!autolist <n?>`: Calls `!list` every `n` minutes (default is 10 mins). Call again to disable.
 - `!massadd <user> <user>...`: Adds all provided twitch users to the queue. Whispers back successes and fails. E.G. `!massadd floskeee gimmedafruitsnacks ninja`
