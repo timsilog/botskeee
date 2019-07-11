@@ -18,7 +18,7 @@ Mods can call any command either in the chat or by whispering Botskeee. It is re
 - `!next`: Remove the person in the front of the line.
 - `!skip`: Move the front of the line to the back.
 - `!add <twitchname> <n?>`: Adds a twitch user to position `n` in line. If a number isn't provided then the user is added to the back of the line. User must already exist in the database, otherwise use `!store`.
-- `!store <twitchname> <ign>`: Adds a twitch user with the specified in-game name to the database (but not the queue, use `!add`).
+- `!store <twitchname> <ign>`: Adds/edits a twitch user with the specified in-game name to the database (but not the queue, use `!add`).
 - `!drop <twitchname?>`: Removes the specified user from the list or the front of the list if not provided.
 - `!remind`: Enable bot to remind the chat to follow (default every 20 mins). Call again to disable. Call `!remind restart` to restart it.
 - `!autolist <n?>`: Calls `!list` every `n` minutes (default is 10 mins). Call again to disable.
