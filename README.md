@@ -21,6 +21,7 @@ Mods can call any command either in the chat or by whispering Botskeee. It is re
 - `!add <twitchname> <n?>`: Adds a twitch user to position `n` in line. If a number isn't provided then the user is added to the back of the line. User must already exist in the database, otherwise use `!store`.
 - `!store <twitchname> <ign>`: Adds/edits a twitch user with the specified in-game name to the database (but not the queue, use `!add`).
 - `!drop <twitchname?>...`: Removes all specified users from the list or the front of the list if none provided.
+- `!move <twitchname> <n>`: Moves a user in line to `n`th place in line. Moves them to the back if `n` is greater than the length of the line.
 - `!listmode <public?|mod?>`: Displays the current list mode. Sets the list to be public or mod-only if provided. 
 - `!listcooldown <n?>`: Displays the current list cooldown for public mode (default 20 seconds). If `n` is provided, sets the cooldown to `n` seconds.
 - `!remind`: Enable bot to remind the chat to follow (default every 20 mins). Call again to disable. Call `!remind restart` to restart it.
